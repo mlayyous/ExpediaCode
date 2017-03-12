@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 
@@ -15,7 +14,6 @@ import com.expedia.offergenerator.OfferGeneratorImpl;
 import com.expedia.to.HotelFilterTo;
 import com.expedia.to.Offer;
 
-@ManagedBean(name = "filter")
 public class FilterBean {
 	
     private List<Offer> offers;

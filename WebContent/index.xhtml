@@ -13,18 +13,18 @@
 	<h:form>
 	 <h:panelGrid columns="10" cellpadding="2">
         <p:outputLabel value="Destination: " for="destination" />
-         <p:inputText id="destination" value="#{filter.destinationName}" required="true"/>
+         <p:inputText id="destination" value="#{filterBean.destinationName}" required="true"/>
          <p:outputLabel value="Length of Stay: " for="lengthstay" />
-         <p:inputText id="lengthstay" value="#{filter.lengthstay}"/>
+         <p:inputText id="lengthstay" value="#{filterBean.lengthstay}"/>
           <p:outputLabel value="Min trip Date: " for="minTripStartDate" />
-        <p:calendar id="minTripStartDate" value="#{filter.minTripStartDate}" showOn="button" />        
+        <p:calendar id="minTripStartDate" value="#{filterBean.minTripStartDate}" showOn="button" />        
           <p:outputLabel value="max trip Date: " for="maxTripStartDate" />
-        <p:calendar id="maxTripStartDate" value="#{filter.maxTripStartDate}" showOn="button" />        
+        <p:calendar id="maxTripStartDate" value="#{filterBean.maxTripStartDate}" showOn="button" />        
         </h:panelGrid>
            
-            <p:commandButton value="Generate" id="generate" actionListener="#{filter.buttonAction}" ajax="false" />
+            <p:commandButton value="Generate" id="generate" actionListener="#{filterBean.buttonAction}" ajax="false" />
 	</h:form>
-	<p:dataTable var="offer" value="#{filter.offers}" >
+	<p:dataTable var="offer" value="#{filterBean.offers}" >
     <p:column headerText="destination">
         <h:outputText value="#{offer.destination}" />
     </p:column>
