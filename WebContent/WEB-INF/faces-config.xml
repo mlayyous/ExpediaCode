@@ -9,10 +9,5 @@
 		<managed-bean-class>com.expedia.to.Offer</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
-	<managed-bean>
-		<managed-bean-name>filterBean</managed-bean-name>
-		<managed-bean-class>com.expedia.bean.FilterBean</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
-	</managed-bean>
 
 </faces-config>
